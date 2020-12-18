@@ -16,7 +16,7 @@ public class ApplicationInitializer {
         ControllerMapper controllerMapper = getControllerMapper(stationRepository, lineRepository);
         return new ApplicationContext(controllerMapper);
     }
-    
+
     private static void initStation(StationRepository stationRepository) {
         stationRepository.addStation(new Station(new StationName("교대역")));
         stationRepository.addStation(new Station(new StationName("강남역")));
