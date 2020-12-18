@@ -1,15 +1,23 @@
 package subway.domain;
 
 public class Station {
-    private String name;
+    private StationName name;
+    private boolean isRegister;
 
-    public Station(String name) {
+    public Station(StationName name) {
         this.name = name;
     }
 
-    public String getName() {
+    public StationName getName() {
         return name;
     }
 
     // 추가 기능 구현
+    public void setRegister(boolean register) {
+        this.isRegister = register;
+    }
+
+    public boolean isRegister() {
+        return isRegister;
+    }
 }
